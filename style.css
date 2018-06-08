@@ -1,0 +1,518 @@
+/*
+Theme Name: customtheme
+Author: Georgii Chernikov
+Version: 1.0
+ */
+
+body{
+    font-family: Arial, sans-serf;
+    font-size: 14px;
+    color: #333;
+}
+
+a:link{
+    text-decoration: none;
+    color: #85a3c3;
+}
+a:visited{
+    color: #318ac3;
+}
+
+.post h2 a{
+    text-decoration: none;
+    color: #999999;
+}
+
+p{
+    line-height: 1.65em;
+}
+
+h3, h2, h4{
+    color: #999999;
+}
+
+
+/*
+------------------------------------------------------------------------------
+                        General Layout Styles
+------------------------------------------------------------------------------
+*/
+
+div.container{
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Main Column */
+.main-column{
+    width: 75%;
+    float: left;
+}
+
+/* Side Column */
+.secondary-column{
+    width: 20%;
+    float: right;
+    /*padding-left: 5px;*/
+}
+
+/*
+------------------------------------------------------------------------------
+                                Header Styles
+------------------------------------------------------------------------------
+*/
+
+.site-header {
+    border-bottom: 2px solid #999;
+}
+
+.site-header h1 a{
+    text-decoration: none;
+    font-size: 2em;
+    color: #999999;
+}
+
+.site-header h5{
+    color: #444444;
+}
+
+/*
+------------------------------------------------------------------------------
+                                Footer Styles
+------------------------------------------------------------------------------
+*/
+
+.site-footer{
+    border-top: 2px solid #999;
+    margin-top: 30px;
+}
+
+.site-footer p{
+    text-align: center;
+}
+
+.site-footer-subsc{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+p.site-footer-subsc{
+    margin-top: 50px;
+}
+
+.sbsc-btn{
+    margin-top: 20px;
+    background-color: #999;
+    color: #FFF;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+.sbsc-btn:hover{
+    background-color: #696968;
+}
+
+.site-footer input{
+    outline: none;
+    border: none;
+    font-size: 1.25em;
+    border-bottom: 2px solid #999;
+}
+
+.site-footer input:focus{
+    border-bottom: 2px solid #696968;
+}
+
+/* Content Area */
+article.post{
+    border-bottom: 2px dotted #bbbbbb;
+}
+
+article.post:last-of-type{
+    border-bottom: none
+}
+/*
+------------------------------------------------------------------------------
+                                Navigation Menus
+------------------------------------------------------------------------------
+*/
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav ul li {
+    list-style: none;
+    float: left;
+}
+
+/* Site Header Menu */
+.site-header nav ul{
+    float: right;
+}
+
+.site-header{}
+
+.site-header nav ul li{
+    margin-left: 5px;
+}
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited{
+    display: block;
+    padding: 10px 18px;
+    font-size: 2em;
+    color: #696968;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+.site-header nav ul li a:hover{
+    color: #3d3d3e;
+}
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited{
+    background-color: #999;
+    color: #FFF;
+}
+.site-header nav ul li.current-menu-item a:link:hover,
+.site-header nav ul li.current-menu-item a:visited:hover,
+.site-header nav ul li.current-page-ancestor a:link:hover,
+.site-header nav ul li.current-page-ancestor a:visited:hover{
+    background-color: #a0a0a0;
+}
+
+/* Footer Menu */
+.site-footer nav ul li a:link,
+.site-footer nav ul li a:visited{
+    text-decoration: none;
+    color: #696968;
+}
+
+.site-footer nav ul li a:hover{
+    color: #3d3d3e;
+}
+
+.site-footer nav{
+    margin: 10px 0 0 0;
+}
+
+.site-footer nav ul li {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px dotted #BBB;
+}
+
+/* Page Layout */
+article.page h2{
+    font-size: 225%;
+    color: #999999;
+    margin-bottom: 15px;
+}
+
+/*Clearfix*/
+.clearfix:before, .clearfix:after {content: ""; display: table;}
+.clearfix:after{clear:both;}
+.clearfix {*zoom: 1;}
+
+/* Two Column Title Layout*/
+div.title-column{
+    width: 30%;
+    float: left;
+    /*Todo: flexbox*/
+}
+
+div.text-column{
+    width:70%;
+    float: right;
+    /*Todo: flexbox*/
+}
+
+/* Info Box Styles*/
+div.info-box{
+    width: 30%;
+    float: right;
+    margin: 0 0 30px 30px;
+    padding: 20px;
+    background-color: #EEEEEE;
+}
+
+div.info-box h4{
+    margin-bottom: 5px;
+    text-align: center;
+    color: #777;
+}
+
+div.info-box p {
+    font-size:85%;
+    font-style: italic;
+}
+
+div.info-box h6{
+    float: right;
+}
+
+/* Children Links */
+.children-links{
+    margin: 20px 0 20px 0;
+    font-size: 80%;
+}
+
+.children-links a:link,
+.children-link a:visited{
+    text-decoration: none;
+}
+
+.children-links ul{
+    float:left;
+}
+
+.children-links ul li{
+    margin-right: 20px;
+}
+
+.children-links ul li a{
+    color: #696968;
+}
+
+.children-links ul li a:hover{
+    color: #3d3d3e;
+}
+
+.children-links .parent-link{
+    float: left;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #DDD;
+    font-size:120%;
+    font-weight:bold;
+}
+
+.children-links .parent-link a:link,
+.children-links .parent-link a:visited{
+    color: #333;
+}
+
+.children-links .current_page_item a:link,
+.children-links .current_page_item a:visited{
+    border-bottom: 1px solid #DDD;
+    color: #333;
+    font-weight: bold;
+    cursor: default;
+}
+
+/*
+------------------------------------------------------------------------------
+                                Post Styles
+------------------------------------------------------------------------------
+*/
+.post h2{
+    margin-bottom: 0;
+}
+
+p.post-info{
+    margin-top: -3px;
+    font-size: 85%;
+    color: #999;
+}
+
+p.post-info a:link,
+p.post-info a:visited{
+    color: #999;
+}
+
+/*
+------------------------------------------------------------------------------
+                        Different Formats Styles
+------------------------------------------------------------------------------
+*/
+
+/* Aside Post Format Styles */
+article.post-aside,
+article.post-link{
+    font-size: 125%;
+    background-color: #b3deff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+    margin: 15px 0 15px 0;
+    border-bottom: none;
+}
+
+.mini-meta{
+    font-size: 65%;
+    margin: 0;
+    color: #999;
+}
+
+/* Link Post Format Styles*/
+article.post-link{
+    padding: 0;
+    background-color: #d3eeff;
+}
+
+article.post-link a{
+    display: block;
+    padding: 20px;
+}
+
+/* Gallery Post Format Styles*/
+article.post-gallery{
+    background-color: #333;
+    color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+    margin: 15px 0 15px 0;
+    border-bottom: none;
+}
+
+article.post-gallery img{
+    border: none!important;
+}
+
+article.post-gallery h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Video Post Format Styles*/
+article.post-video{
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+    margin: 15px 0 15px 0;
+    border-bottom: none;
+}
+
+article.post-video h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+article.post-video p iframe{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*
+------------------------------------------------------------------------------
+                                Image Styles
+------------------------------------------------------------------------------
+*/
+img{
+    max-width: 100%;
+}
+
+.has-thumbnail{
+    position: relative;
+    padding-left: 200px;
+}
+
+.post-thumbnail{
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+/*
+------------------------------------------------------------------------------
+                                Search Styles
+------------------------------------------------------------------------------
+*/
+div.hd-search{
+    float: right;
+    margin-top: 28px;
+}
+
+div.hd-search label{
+    display: none;
+}
+
+div.hd-search #searchsubmit{
+    background-color: #696968;
+    color: #FFF;
+    padding: 5px 14px;
+    border: none;
+    border-radius: 3px;
+}
+
+div.hd-search #searchsubmit:hover{
+    background-color: #999;
+}
+
+div.hd-search #s{
+    padding: 3px 0;
+}
+
+/*
+------------------------------------------------------------------------------
+                                Widget Styles
+------------------------------------------------------------------------------
+*/
+.secondary-column{
+    float: right;
+}
+
+div.footer-widgets{
+    border-top: 2px solid #999;
+}
+
+div.secondary-column li,
+div.footer-widgets li{
+    /*list-style-type: none;*/
+}
+
+div.footer-widgets li label{
+    display: none;
+}
+
+div.footer-widgets #searchsubmit{
+    margin-top: 5px;
+    transform: translateX(50%);
+    background-color: #696968;
+    color: #FFF;
+    padding: 5px 14px;
+    border: none;
+    border-radius: 3px;
+}
+
+div.footer-widgets #searchsubmit:hover{
+    background-color: #999;
+}
+
+div.footer-widgets #s{
+    padding: 3px 0;
+}
+
+/* Footer widget Area Styles */
+.footer-widget-area{
+    width: 25%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+/*
+------------------------------------------------------------------------------
+                                Post Columns Styles
+------------------------------------------------------------------------------
+*/
+.home-columns{
+    padding-top: 30px;
+}
+
+.one-half{
+    width: 45%;
+    float: left;
+    margin-right: 10%;
+}
+
+.last{
+    margin-right:0;
+}
